@@ -1,79 +1,46 @@
 {
-  "corpus_name": "hillmari_multimedia",
-  "citation": "Hill Mari corpus.",
+  "generate_dictionary": true,
+  "fulltext_view_enabled": true,
+  "interface_languages": ["ru"],
+  "all_language_search_enabled": false,
+  "gloss_search_enabled": true,
+  "ambiguous_analyses": true,
   "input_format": "json",
   "debug": false,
-  "media": true,
-  "video": true,
-  "media_length": 60,
+  "media": false,
+  "video": false,
   "max_context_expand": 10,
   "max_distance_filter": 200000,
   "max_docs_retrieve": 9999,
   "max_words_in_sentence": 40,
   "query_timeout": 60,
   "year_sort_enabled": true,
-  "viewable_meta": [
-    "title"
-  ],
-  "sentence_meta": [
-    
-  ],
+  "corpus_name": "hillmari_multimedia",
+  "citation": "Hill Mari corpus.",
+  "viewable_meta": ["title", "filename"],
+  "sentence_meta": [],
   "search_meta": {
-    "columns": [
-      [
-        {"type": "input_text", "name": "title", "placeholder": "Title"}
-      ]
-    ],
-    "stat_options": [
-      "title"
-    ]
+    "columns": [[{"type": "input_text", "name": "title", "placeholder": "Title"}]],
+    "stat_options": ["title"]
   },
-  "word_fields":
-  [
-    "trans_ru"
-  ],
-  "default_values": {"sent_meta_speaker_type": "native"},
-  "sentence_meta_values": {
-    "speaker_type": ["native", "linguist"]
-  },
-  "keyboards": {
-    "russian": "russian"
-  },
-  "generate_dictionary": true,
-  "fulltext_view_enabled": true,
-  "use_nonpersistent_fulltext_id": true,
-  "languages": ["beserman", "russian"],
-  "transliterations": ["original", "cyrillic", "UPA"],
-  "input_methods": ["normal"],
-  "interface_languages": [
-    "ru"
-  ],
-  "all_language_search_enabled": false,
-  "gloss_search_enabled": true,
-  "ambiguous_analyses": true,
+  "word_fields":["trans_ru"],
+  "sentence_meta_values": {"speaker_type": ["native", "linguist"]},
+  "languages": ["hill_mari", "russian"],
   "lang_props":
   {
     "hillmari":
     {
-      "gloss_shortcuts": {
-      
-      },
+      "gloss_shortcuts": {},
       "gr_fields_order": [],
-      "gloss_selection": {
-        "columns": []
-      },
-      "gramm_selection": {
-        "columns": []
-      }
+      "gloss_selection": {"columns": []},
+      "gramm_selection": {"columns": []}
     },
     "russian":
     {
       "gloss_shortcuts": {},
       "dictionary_categories": [],
       "gr_fields_order": [],
-      "gramm_selection": {
-        "columns": []
-      }
+      "gramm_selection": {"columns": []}
     },
     "undefined": {"gr_fields_order": []}
   }
